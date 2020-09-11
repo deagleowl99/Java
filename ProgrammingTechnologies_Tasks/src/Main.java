@@ -7,76 +7,84 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println("ќ—“ј“ќ  ќ“ ƒ≈Ћ≈Ќ»я");
-		System.out.println("¬ведите первое число:");
+		/*System.out.println("Task 1");
+		System.out.println("Input the first number:");
 		int a = in.nextInt();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.remainder(a,b));
+		System.out.println("Result: " + Tasks1.remainder(a,b));
 		
-		System.out.println("ѕЋќўјƒ№ “–≈”√ќЋ№Ќ» ј");
-		System.out.println("¬ведите первое число:");
+		System.out.println("Task 2");
+		System.out.println("Input the first number:");
 		double a1 = in.nextDouble();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		double b1 = in.nextDouble();
-		System.out.println("–езультат: " + Tasks1.triArea(a1,b1));
+		System.out.println("Result: " + Tasks1.triArea(a1,b1));
 		
-		System.out.println("Ћјѕџ ∆»¬ќ“Ќџ’");
-		System.out.println("¬ведите первое число:");
+		System.out.println("Task 3");
+		System.out.println("Input the first number:");
 		int a2 = in.nextInt();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b2 = in.nextInt();
-		System.out.println("¬ведите третье число:");
+		System.out.println("Input the third number:");
 		int с2 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.animals(a2,b2,с2));
+		System.out.println("Result: " + Tasks1.animals(a2,b2,с2));
 		
-		System.out.println("ѕ–ќ‘»“џ");
-		System.out.println("¬ведите первое число:");
+		System.out.println("Task 4");
+		System.out.println("Input the first number:");
 		double a3 = in.nextDouble();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b3 = in.nextInt();
-		System.out.println("¬ведите третье число:");
+		System.out.println("Input the third number:");
 		int с3 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.profitableGamble(a3,b3,с3));
+		System.out.println("Result: " + Tasks1.profitableGamble(a3,b3,с3));
 		
-		System.out.println("ќѕ≈–ј÷»я");
-		System.out.println("¬ведите первое число:");
+		System.out.println("Task 5");
+		System.out.println("Input the first number:");
 		int a4 = in.nextInt();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b4 = in.nextInt();
-		System.out.println("¬ведите третье число:");
+		System.out.println("Input the third number:");
 		int с4 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.operation(a4,b4,с4));
+		System.out.println("Result: " + Tasks1.operation(a4,b4,с4));
 		
-		System.out.println("ASCII");
-		System.out.println("¬ведите символ:");
+		System.out.println("Task 6");
+		System.out.println("Input the character:");
 		char a5 = in.next().charAt(0);
-		System.out.println("–езультат: " + Tasks1.ctoa(a5));
+		System.out.println("Result: " + Tasks1.ctoa(a5));
 		
-		System.out.println("—умма чисел");
-		System.out.println("¬ведите число:");
+		System.out.println("Task 7");
+		System.out.println("Input the number:");
 		int a6 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.addUpTo(a6));
+		System.out.println("Result: " + Tasks1.addUpTo(a6));
 		
-		System.out.println("Ќ≈–ј¬≈Ќ—“¬ќ “–≈”√ќЋ№Ќ» ј");
-		System.out.println("¬ведите первое число:");
+		System.out.println("Task 8");
+		System.out.println("Input the first number:");
 		int a7 = in.nextInt();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b7 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.nextEdge(a7,b7));
+		System.out.println("Result: " + Tasks1.nextEdge(a7,b7));*/
 		
-		System.out.println("ћј——»¬");
-	    int[] array = {};
+		System.out.println("Task 9");
+	    System.out.println("Input the size of array:");
+	    int n = in.nextInt();
+	    int[] array;
+	    array = new int [n];
+	    for (int i=0; i<n; i++)
+	    {
+	    	System.out.println("Input the element of array:");
+	    	array[i] = in.nextInt();
+	    }
 		System.out.println("–езультат: " + Tasks1.sumOfCubes(array));
 		
-		System.out.println("ABCMATH");
-		System.out.println("¬ведите первое число:");
+	/*	System.out.println("Task 10");
+		System.out.println("Input the first number:");
 		int a8 = in.nextInt();
-		System.out.println("¬ведите второе число:");
+		System.out.println("Input the second number:");
 		int b8 = in.nextInt();
-		System.out.println("¬ведите третье число:");
+		System.out.println("Input the third number:");
 		int c8 = in.nextInt();
-		System.out.println("–езультат: " + Tasks1.abcmath(a8,b8,c8));
+		System.out.println("Result: " + Tasks1.abcmath(a8,b8,c8));*/
 		
 	}
 
