@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Scanner in = new Scanner(System.in);
-		/*System.out.println("Task 1");
+		System.out.println("Task 1");
 		System.out.println("Input the first number:");
 		int a = in.nextInt();
 		System.out.println("Input the second number:");
@@ -63,7 +63,7 @@ public class Main {
 		int a7 = in.nextInt();
 		System.out.println("Input the second number:");
 		int b7 = in.nextInt();
-		System.out.println("Result: " + Tasks1.nextEdge(a7,b7));*/
+		System.out.println("Result: " + Tasks1.nextEdge(a7,b7));
 		
 		System.out.println("Task 9");
 	    System.out.println("Input the size of array:");
@@ -75,16 +75,16 @@ public class Main {
 	    	System.out.println("Input the element of array:");
 	    	array[i] = in.nextInt();
 	    }
-		System.out.println("Результат: " + Tasks1.sumOfCubes(array));
+		System.out.println("Result: " + Tasks1.sumOfCubes(array));
 		
-	/*	System.out.println("Task 10");
+		System.out.println("Task 10");
 		System.out.println("Input the first number:");
 		int a8 = in.nextInt();
 		System.out.println("Input the second number:");
 		int b8 = in.nextInt();
 		System.out.println("Input the third number:");
 		int c8 = in.nextInt();
-		System.out.println("Result: " + Tasks1.abcmath(a8,b8,c8));*/
+		System.out.println("Result: " + Tasks1.abcmath(a8,b8,c8));
 		
 	}
 
