@@ -1,0 +1,47 @@
+{% block content %}
+<!DOCTYPE html>
+<html>
+	<div class="header">
+        {% load static %}
+    </div>
+	<body>
+		<link rel="stylesheet" href="{% static 'css/article.css' %}">
+		<div class="reg"><h><a href = "../registration" style="color: #ffffff">Регистрация</a>
+		{% if request.user.is_authenticated %}
+		<a href = "{% url 'logout' %}" style="color: #ffffff">Выйти</a>
+		{{user.username}} 
+		{% else %}
+			</div>
+		{% endif %}
+		<div class="Logo">
+			<table cellspacing="10" border="1" cellpadding="10" width="100%">	
+			<tr><th>FILBET</th>
+			<th>ЛИНИЯ</th>
+			<th>LIVE МАТЧИ</th>
+			<th><a href = "../discounts" style="color: #ffffff">АКЦИИ</a></th>
+			<th><a href = "../filbet" style="color: #ffffff">НАЗАД</a></th>
+			<th><a href = "../help" style="color: #ffffff">ПОМОЩЬ</a></th></tr>
+			</table>			
+			<table cellspacing="30" border="1">
+				<tr><th><i>Спортивная игра</i></th></tr>
+				<tr><td><i>Футбол</i></td></tr>
+				<tr><td><i>Баскетбол</i></td></tr>
+				<tr><td><i>Хоккей</i></td></tr>
+			</table>	
+			<div class="aboutus">
+			<font color="ffffff">Фирменное наименование: Общество с ограниченной ответственностью «FILBET»
+			<p>Коммерческое обозначение БК FILBET</p>
+			<p>ОГРН: 9999999999 ИНН: 12345678</p>
+			<p>111024, г. Москва, 2 кабельный проезд, д.4 "Общежитие МТУСИ №3"</p>
+			<p>Лицензия на осуществление деятельности по организации и проведению азартных игр в букмекерских конторах и тотализаторах № 20,</p>
+			<p>выданная Федеральной налоговой службой 16 сентября 2019 года.</p>
+			<p>mtuci@mail.ru</p>
+			<p>Товарный знак: FILBET.NET</p>
+			<p>Центром учета переводов интерактивных ставок ООО «FILBET» является TINKOFF Банк (АО) (Лицензия ЦБ РФ № 2241; ОГРН 1027739328440).</p>
+			<p>Подробная информация на сайте https://www.tinkoff.ru.</p> 		
+			</font>
+			</div>	
+		</div>
+	</body>
+</html>
+{% endblock %}

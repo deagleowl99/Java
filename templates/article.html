@@ -1,0 +1,22 @@
+<title> {{post.title}} </title>
+<body>
+    <div class="header">
+        {% load static %}
+        <img class="image" src="{% static 'img/dpb-logo.png' %}">
+        <h2 class="exit"><a href="/articles/">Все статьи</a></h2>
+        <link rel="stylesheet" href="{% static 'css/article.css' %}">
+    </div>
+    <div class="article">
+	{% for post in posts %}
+		<div class="one-post">
+			<div class="post-title">
+				<h2><a href = "article/{{post.id}}">{{ post.title }}</a></h2>
+			</div>
+			<div class="article-info">
+				<div class="article-author">{{ post.author.username }}</div>
+				<div class="article-created-date">{{ post.created_date }}</div> 
+			    <div class="article-text">{{ post.get_excerpt }}</div>
+			</div>
+		 </div>
+		{% endfor %}
+</body>
