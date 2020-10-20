@@ -1,6 +1,7 @@
 package Tasks;
 
-public class Tasks1 {
+public class Tasks1 
+{
 	
 		public static int remainder(int a, int b)
 		{
