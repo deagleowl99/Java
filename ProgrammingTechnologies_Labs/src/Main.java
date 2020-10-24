@@ -7,6 +7,10 @@ import Labs.Cubix;
 import Labs.UrlContainer;
 import Labs.UrlInfo;
 import Labs.UrlScanner;
+import Labs.SimpleGUI1;
+import Labs.SimpleGUI2;
+import Labs.SimpleGUI3;
+import Labs.SimpleGUI4;
 
 class Main
 {
@@ -162,7 +166,17 @@ class Main
 		System.out.println(urlInfo.getUrl());
 	}
 	System.out.println("Всего просмотрено url: " + Integer.toString(visitedUrl.size()));
+	
+	SimpleGUI1 app1 = new SimpleGUI1();
+	app1.setVisible(true);
+	SimpleGUI2 app2 = new SimpleGUI2();
+	app2.setVisible(true);
+	SimpleGUI3 app3 = new SimpleGUI3();
+	app3.setVisible(true);
+	SimpleGUI4 app4 = new SimpleGUI4();
+	app4.setVisible(true);
 
+	
 	RandomDigit random = new RandomDigit();
 	Squarix sqr = new Squarix();
 	Cubix cub = new Cubix();
