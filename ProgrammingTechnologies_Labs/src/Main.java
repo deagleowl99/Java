@@ -11,6 +11,9 @@ import Labs.SimpleGUI1;
 import Labs.SimpleGUI2;
 import Labs.SimpleGUI3;
 import Labs.SimpleGUI4;
+import Labs.Person;
+import Labs.Player;
+import Labs.Enemy;
 
 class Main
 {
@@ -176,6 +179,23 @@ class Main
 	SimpleGUI4 app4 = new SimpleGUI4();
 	app4.setVisible(true);
 
+	Player player = new Player("DDD");
+	Enemy enemy = new Enemy("fff");
+	Scanner in2 = new Scanner(System.in);
+	int a1;
+	while (enemy.lives > 0 && player.lives > 0)
+	{		
+		enemy.a = (int) (Math.random() * 5);
+		player.a = (int) (Math.random() * 5);
+		
+		System.out.print("Input digital");
+		a1 = in2.nextInt();
+		enemy.checkRandom(a1, player, enemy);
+		player.checkRandom(player.a, enemy, player);
+		System.out.println("Случайное число игрока: " + player.a);
+		System.out.println("Случайное число врага: " + enemy.a);
+	}
+	System.out.println("Game is over!");
 	
 	RandomDigit random = new RandomDigit();
 	Squarix sqr = new Squarix();
